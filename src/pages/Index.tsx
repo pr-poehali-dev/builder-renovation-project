@@ -19,6 +19,7 @@ const SERVICES = [
   { icon: "Wrench", title: "Ремонт любой сложности", desc: "Полный спектр строительных и ремонтных работ для физических и юридических лиц", slug: "/services/repair" },
   { icon: "Shield", title: "Гарантия на работы", desc: "Даём гарантию на все работы, выполненные из нашего материала", slug: "/services/warranty" },
   { icon: "Fence", title: "Заборы", desc: "Выполняем все виды заборов: глухие, сетчатые, кирпичные, деревянные и другие", slug: "/services/fences" },
+  { icon: "Warehouse", title: "Хозпостройки", desc: "Строим хозблоки, сараи и подсобные помещения любого типа под ключ", slug: "/services/outbuildings" },
 ];
 
 const WORKS = [
