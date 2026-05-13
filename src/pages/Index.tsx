@@ -556,7 +556,7 @@ export default function Index() {
                     </div>
                     <div>
                       <div className="font-display text-xs font-bold uppercase tracking-wider text-gray-500 mb-0.5">Режим работы</div>
-                      <div className="font-body text-white text-sm">Пн–Вс: 8:00 — 20:00</div>
+                      <div className="font-body text-white text-sm">Круглосуточно, без выходных</div>
                     </div>
                   </div>
                 </div>
