@@ -33,10 +33,14 @@ const ADVANTAGES = [
   { num: "100%", text: "гарантия качества" },
 ];
 
+const SEND_LEAD_URL = "https://functions.poehali.dev/8e18931c-a90b-4bcf-b1f5-65f682a5ac6e";
+
 export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", comment: "" });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const scrollTo = (href: string) => {
     setMenuOpen(false);
@@ -44,9 +48,26 @@ export default function Index() {
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSent(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch(SEND_LEAD_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setSent(true);
+      } else {
+        setError("Ошибка отправки. Позвоните нам напрямую.");
+      }
+    } catch {
+      setError("Ошибка сети. Позвоните нам напрямую.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -289,11 +310,17 @@ export default function Index() {
                       placeholder="Что нужно сделать?"
                     />
                   </div>
+                  {error && (
+                    <div className="bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-3 font-body text-sm">
+                      {error}
+                    </div>
+                  )}
                   <button
                     type="submit"
-                    className="bg-yellow-400 text-black font-display font-bold uppercase tracking-widest py-4 text-sm hover:bg-yellow-300 transition-colors"
+                    disabled={loading}
+                    className="bg-yellow-400 text-black font-display font-bold uppercase tracking-widest py-4 text-sm hover:bg-yellow-300 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Отправить заявку
+                    {loading ? "Отправляем..." : "Отправить заявку"}
                   </button>
                   <p className="font-body text-gray-600 text-xs text-center">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
                 </form>
