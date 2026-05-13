@@ -53,6 +53,17 @@ const PROJECTS = [
       "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/74afc2cf-03ff-452a-a983-a45cb4b72d84.jpg",
     ],
   },
+  {
+    id: "bath-3x5",
+    title: "Баня 3 × 5 м",
+    size: "3 × 5 м",
+    description: "Баня разделена на 2 помещения: предбанник и парная. В парной есть лавка и полог.",
+    specs: [{ label: "Размер", value: "3 × 5 м" }, ...COMMON_SPECS_BASE],
+    aiPhotos: [
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/a30c6a20-7e50-4700-ae7f-13dca46c37fd.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/74afc2cf-03ff-452a-a983-a45cb4b72d84.jpg",
+    ],
+  },
 ];
 
 type Photo = { key: string; url: string };
