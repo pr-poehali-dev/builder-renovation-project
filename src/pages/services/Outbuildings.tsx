@@ -69,6 +69,30 @@ const PROJECTS = [
       "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/ce5bf284-6f60-49b3-aaa5-605eb1870a84.jpg",
     ],
   },
+  {
+    id: "h-39",
+    title: "Хозблок Х-39",
+    size: "6 × 3 м + дровник 3 × 3 м",
+    description: "Каркасный хозблок с пристроенным дровником. Отделка имитацией бруса внутри и снаружи. Удобное решение для дачи: хранение инвентаря и дров под одной крышей.",
+    specs: [
+      { label: "Габариты хозблока", value: "6 × 3 м" },
+      { label: "Габариты дровника", value: "3 × 3 м" },
+      { label: "Высота потолка", value: "2,6 – 2,8 м" },
+      { label: "Высота от земли", value: "3,25 м" },
+      { label: "Фундамент", value: "Столбчатый из бетонных блоков" },
+      { label: "Стойки каркаса", value: "Доска 50×100 мм" },
+      { label: "Лаги пола", value: "Доска 50×150 мм" },
+      { label: "Стропила", value: "Доска 50×150 мм" },
+      { label: "Утепление", value: "Отсутствует" },
+      { label: "Отделка внутри", value: "Имитация бруса / вагонка" },
+      { label: "Отделка снаружи", value: "Имитация бруса / вагонка" },
+      { label: "Кровля", value: "Профилированный лист" },
+    ],
+    aiPhotos: [
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/9ac5cd55-1504-4f60-8ed3-50a246e33436.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/a25665dd-06ca-4ae2-ac68-cb1dd432caec.jpg",
+    ],
+  },
 ];
 
 type Photo = { key: string; url: string };
