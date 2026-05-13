@@ -93,6 +93,29 @@ const PROJECTS = [
       "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/a25665dd-06ca-4ae2-ac68-cb1dd432caec.jpg",
     ],
   },
+  {
+    id: "h-34",
+    title: "Хозблок Х-34",
+    size: "3 × 4 м",
+    description: "Компактный каркасный хозблок на монолитной железобетонной плите. Отделка профлистом и имитацией бруса снаружи. Внутри — ОСП или вагонка по желанию.",
+    specs: [
+      { label: "Наружные габариты", value: "3 × 4 м" },
+      { label: "Внутренние габариты", value: "2,8 × 3,8 м" },
+      { label: "Высота потолка", value: "2,2 – 2,7 м" },
+      { label: "Высота от земли", value: "3,1 м" },
+      { label: "Фундамент", value: "Монолитная железобетонная плита" },
+      { label: "Каркас стен", value: "Доска 50×100 мм" },
+      { label: "Стропила", value: "Доска 50×150 мм" },
+      { label: "Утепление", value: "Отсутствует" },
+      { label: "Отделка внутри", value: "ОСП / вагонка (опционально)" },
+      { label: "Отделка снаружи", value: "Профлист + имитация бруса" },
+      { label: "Кровля", value: "Профилированный лист" },
+    ],
+    aiPhotos: [
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/42b443f4-a698-45b9-90bf-7c72cf33e96f.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/c78f4c65-843e-4788-b470-1f8ab33e69d5.jpg",
+    ],
+  },
 ];
 
 type Photo = { key: string; url: string };
