@@ -38,8 +38,8 @@ const PROJECTS = [
     description: "Баня разделена на 2 помещения: предбанник и парная. В парной есть лавка и полог.",
     specs: [{ label: "Размер", value: "2,4 × 4 м" }, ...COMMON_SPECS_BASE],
     aiPhotos: [
-      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/a30c6a20-7e50-4700-ae7f-13dca46c37fd.jpg",
-      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/74afc2cf-03ff-452a-a983-a45cb4b72d84.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/d9baa0ea-07df-4e26-a374-0d7fd53f92d5.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/d98c3b9e-6701-45bb-9301-baf747027610.jpg",
     ],
   },
   {
@@ -49,8 +49,8 @@ const PROJECTS = [
     description: "Баня разделена на 2 помещения: предбанник и парная. В парной есть лавка и полог.",
     specs: [{ label: "Размер", value: "3 × 4 м" }, ...COMMON_SPECS_BASE],
     aiPhotos: [
-      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/a30c6a20-7e50-4700-ae7f-13dca46c37fd.jpg",
-      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/74afc2cf-03ff-452a-a983-a45cb4b72d84.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/be5f3d84-c917-41b4-ad65-0579fd38422d.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/d98c3b9e-6701-45bb-9301-baf747027610.jpg",
     ],
   },
   {
@@ -60,8 +60,8 @@ const PROJECTS = [
     description: "Баня разделена на 2 помещения: предбанник и парная. В парной есть лавка и полог.",
     specs: [{ label: "Размер", value: "3 × 5 м" }, ...COMMON_SPECS_BASE],
     aiPhotos: [
-      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/a30c6a20-7e50-4700-ae7f-13dca46c37fd.jpg",
-      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/74afc2cf-03ff-452a-a983-a45cb4b72d84.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/c90873c8-907e-481e-b02e-23e77ef36094.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/d98c3b9e-6701-45bb-9301-baf747027610.jpg",
     ],
   },
 ];
