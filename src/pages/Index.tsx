@@ -20,6 +20,7 @@ const SERVICES = [
   { icon: "Shield", title: "Гарантия на работы", desc: "Даём гарантию на все работы, выполненные из нашего материала", slug: "/services/warranty" },
   { icon: "Fence", title: "Заборы", desc: "Выполняем все виды заборов: глухие, сетчатые, кирпичные, деревянные и другие", slug: "/services/fences" },
   { icon: "Warehouse", title: "Хозпостройки", desc: "Строим хозблоки, сараи и подсобные помещения любого типа под ключ", slug: "/services/outbuildings" },
+  { icon: "Flame", title: "Бани", desc: "Строим бани любого типа: каркасные, модульные, бочки и вагончики под ключ", slug: "/services/bathhouses" },
 ];
 
 const WORKS = [
