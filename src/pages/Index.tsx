@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
 const HERO_IMG = "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/44c2bb61-84c1-401c-a8da-5b76b183d760.jpg";
@@ -11,12 +12,12 @@ const NAV_LINKS = [
 ];
 
 const SERVICES = [
-  { icon: "Home", title: "Кровельные работы", desc: "Монтаж и ремонт кровли, реконструкция и утепление крыши, монтаж аксессуаров" },
-  { icon: "Building2", title: "Пристройки и веранды", desc: "Строительство пристроек, веранд, террас, надстройки этажа любой сложности" },
-  { icon: "Layers", title: "Фасадные работы", desc: "Монтаж сайдинга, фасадных панелей, облицовка цоколя под ключ" },
-  { icon: "Square", title: "Отмостка и фундамент", desc: "Бетонная отмостка вокруг дома, устройство фундамента любой сложности" },
-  { icon: "Wrench", title: "Ремонт любой сложности", desc: "Полный спектр строительных и ремонтных работ для физических и юридических лиц" },
-  { icon: "Shield", title: "Гарантия на работы", desc: "Даём гарантию на все работы, выполненные из нашего материала" },
+  { icon: "Home", title: "Кровельные работы", desc: "Монтаж и ремонт кровли, реконструкция и утепление крыши, монтаж аксессуаров", slug: "/services/roofing" },
+  { icon: "Building2", title: "Пристройки и веранды", desc: "Строительство пристроек, веранд, террас, надстройки этажа любой сложности", slug: "/services/extensions" },
+  { icon: "Layers", title: "Фасадные работы", desc: "Монтаж сайдинга, фасадных панелей, облицовка цоколя под ключ", slug: "/services/facade" },
+  { icon: "Square", title: "Отмостка и фундамент", desc: "Бетонная отмостка вокруг дома, устройство фундамента любой сложности", slug: "/services/foundation" },
+  { icon: "Wrench", title: "Ремонт любой сложности", desc: "Полный спектр строительных и ремонтных работ для физических и юридических лиц", slug: "/services/repair" },
+  { icon: "Shield", title: "Гарантия на работы", desc: "Даём гарантию на все работы, выполненные из нашего материала", slug: "/services/warranty" },
 ];
 
 const WORKS = [
@@ -298,13 +299,20 @@ export default function Index() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-yellow-400/10">
             {SERVICES.map((s) => (
-              <div key={s.title} className="bg-[#111] p-8 hover:bg-[#1a1a1a] transition-colors group cursor-default">
+              <Link
+                key={s.title}
+                to={s.slug}
+                className="bg-[#111] p-8 hover:bg-[#1a1a1a] transition-colors group cursor-pointer block"
+              >
                 <div className="w-12 h-12 bg-yellow-400/10 flex items-center justify-center mb-5 group-hover:bg-yellow-400 transition-colors">
                   <Icon name={s.icon} size={22} className="text-yellow-400 group-hover:text-black transition-colors" />
                 </div>
-                <h3 className="font-display text-lg font-bold uppercase tracking-wide mb-3">{s.title}</h3>
-                <p className="font-body text-gray-500 text-sm leading-relaxed">{s.desc}</p>
-              </div>
+                <h3 className="font-display text-lg font-bold uppercase tracking-wide mb-3 group-hover:text-yellow-400 transition-colors">{s.title}</h3>
+                <p className="font-body text-gray-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+                <div className="flex items-center gap-1 text-yellow-400/60 group-hover:text-yellow-400 transition-colors font-display text-xs uppercase tracking-widest">
+                  Подробнее <Icon name="ArrowRight" size={12} />
+                </div>
+              </Link>
             ))}
           </div>
         </div>
