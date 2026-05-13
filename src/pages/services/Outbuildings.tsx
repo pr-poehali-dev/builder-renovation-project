@@ -43,6 +43,32 @@ const PROJECTS = [
       "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/167f438a-6e87-4d02-94b8-187e8cfc62d8.jpg",
     ],
   },
+  {
+    id: "h-36",
+    title: "Хозблок Х-36",
+    size: "6 × 3 м",
+    description: "Просторный каркасный хозблок с отделкой имитацией бруса внутри и снаружи. Подходит для мастерской, хранения техники или оборудования.",
+    specs: [
+      { label: "Наружные габариты", value: "6 × 3 м" },
+      { label: "Внутренние габариты", value: "5,8 × 2,8 м" },
+      { label: "Высота потолка", value: "2,6 – 2,85 м" },
+      { label: "Высота от земли", value: "3,3 м" },
+      { label: "Фундамент", value: "Столбчатый из бетонных блоков" },
+      { label: "Лаги пола", value: "Доска 50×150 мм" },
+      { label: "Стойки каркаса", value: "Доска 50×100 мм" },
+      { label: "Стропила", value: "Доска 50×150 мм" },
+      { label: "Утепление", value: "Отсутствует" },
+      { label: "Отделка внутри", value: "Имитация бруса / вагонка" },
+      { label: "Отделка снаружи", value: "Имитация бруса / вагонка" },
+      { label: "Кровля", value: "Профилированный лист" },
+      { label: "Снеговой район", value: "4-й" },
+      { label: "Ветровой район", value: "2-й" },
+    ],
+    aiPhotos: [
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/d55fe70f-e29b-463e-8980-f4b0080236db.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/ce5bf284-6f60-49b3-aaa5-605eb1870a84.jpg",
+    ],
+  },
 ];
 
 type Photo = { key: string; url: string };
