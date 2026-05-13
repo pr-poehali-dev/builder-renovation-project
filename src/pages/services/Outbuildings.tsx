@@ -138,6 +138,30 @@ const PROJECTS = [
       "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/20e2d2a1-436f-45ee-9a56-9e656668177a.jpg",
     ],
   },
+  {
+    id: "hd-63",
+    title: "Хозблок ХД-63",
+    size: "4 × 3 м + дровник 2 × 3 м",
+    description: "Утеплённый каркасный хозблок с пристроенным дровником. Обшивка профлистом и планкеном снаружи. Внутри — ОСП. Подходит для круглогодичного использования.",
+    specs: [
+      { label: "Габариты хозблока", value: "4 × 3 м" },
+      { label: "Габариты дровника", value: "2 × 3 м" },
+      { label: "Высота потолка", value: "2,2 – 2,4 м" },
+      { label: "Высота от земли", value: "3,05 м" },
+      { label: "Фундамент", value: "Столбчатый из бетонных блоков" },
+      { label: "Стойки каркаса", value: "Доска 50×150 мм" },
+      { label: "Лаги пола", value: "Доска 50×150 мм" },
+      { label: "Стропила", value: "Доска 50×200 мм" },
+      { label: "Утепление", value: "Каменная вата 150 мм" },
+      { label: "Отделка внутри", value: "ОСП" },
+      { label: "Отделка снаружи", value: "Профлист + планкен" },
+      { label: "Кровля", value: "Профилированный лист" },
+    ],
+    aiPhotos: [
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/12a91016-3de8-41ee-8b5d-a6c5c71cb5d6.jpg",
+      "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca95ae39e/files/e865a386-5e0e-4d7f-a575-6b723336db6d.jpg",
+    ],
+  },
 ];
 
 type Photo = { key: string; url: string };
