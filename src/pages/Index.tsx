@@ -70,7 +70,7 @@ export default function Index() {
             ))}
           </nav>
           <a
-            href="tel:+79000000000"
+            href="tel:+79176288904"
             className="hidden md:flex items-center gap-2 bg-yellow-400 text-black font-display font-bold text-sm uppercase tracking-widest px-5 py-2 hover:bg-yellow-300 transition-colors duration-200"
           >
             <Icon name="Phone" size={15} />
@@ -305,22 +305,51 @@ export default function Index() {
               <div>
                 <div className="text-yellow-400 font-display text-xs font-bold uppercase tracking-widest mb-4">Контакты</div>
                 <div className="flex flex-col gap-5">
-                  {[
-                    { icon: "Phone", label: "Телефон", val: "+7 (900) 000-00-00" },
-                    { icon: "MessageCircle", label: "WhatsApp / Telegram", val: "+7 (900) 000-00-00" },
-                    { icon: "MapPin", label: "Регион работы", val: "Работаем по всему региону" },
-                    { icon: "Clock", label: "Режим работы", val: "Пн–Вс: 8:00 — 20:00" },
-                  ].map((c) => (
-                    <div key={c.label} className="flex items-start gap-4">
-                      <div className="w-10 h-10 bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
-                        <Icon name={c.icon} size={18} className="text-yellow-400" />
-                      </div>
-                      <div>
-                        <div className="font-display text-xs font-bold uppercase tracking-wider text-gray-500 mb-0.5">{c.label}</div>
-                        <div className="font-body text-white text-sm">{c.val}</div>
-                      </div>
+                  <a href="tel:+79176288904" className="flex items-start gap-4 hover:opacity-80 transition-opacity">
+                    <div className="w-10 h-10 bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Phone" size={18} className="text-yellow-400" />
                     </div>
-                  ))}
+                    <div>
+                      <div className="font-display text-xs font-bold uppercase tracking-wider text-gray-500 mb-0.5">Телефон</div>
+                      <div className="font-body text-white text-sm">+7 (917) 628-89-04</div>
+                    </div>
+                  </a>
+                  <a href="https://wa.me/79176288904" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 hover:opacity-80 transition-opacity">
+                    <div className="w-10 h-10 bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="MessageCircle" size={18} className="text-yellow-400" />
+                    </div>
+                    <div>
+                      <div className="font-display text-xs font-bold uppercase tracking-wider text-gray-500 mb-0.5">WhatsApp</div>
+                      <div className="font-body text-white text-sm">+7 (917) 628-89-04</div>
+                    </div>
+                  </a>
+                  <a href="https://t.me/+79176288904" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 hover:opacity-80 transition-opacity">
+                    <div className="w-10 h-10 bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Send" size={18} className="text-yellow-400" />
+                    </div>
+                    <div>
+                      <div className="font-display text-xs font-bold uppercase tracking-wider text-gray-500 mb-0.5">Telegram</div>
+                      <div className="font-body text-white text-sm">+7 (917) 628-89-04</div>
+                    </div>
+                  </a>
+                  <a href="https://max.ru/+79176288904" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 hover:opacity-80 transition-opacity">
+                    <div className="w-10 h-10 bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="MessagesSquare" size={18} className="text-yellow-400" />
+                    </div>
+                    <div>
+                      <div className="font-display text-xs font-bold uppercase tracking-wider text-gray-500 mb-0.5">Мессенджер Макс</div>
+                      <div className="font-body text-white text-sm">+7 (917) 628-89-04</div>
+                    </div>
+                  </a>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Clock" size={18} className="text-yellow-400" />
+                    </div>
+                    <div>
+                      <div className="font-display text-xs font-bold uppercase tracking-wider text-gray-500 mb-0.5">Режим работы</div>
+                      <div className="font-body text-white text-sm">Пн–Вс: 8:00 — 20:00</div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="bg-yellow-400/10 border border-yellow-400/20 p-6">
