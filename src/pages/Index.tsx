@@ -18,6 +18,7 @@ const SERVICES = [
   { icon: "Square", title: "Отмостка и фундамент", desc: "Бетонная отмостка вокруг дома, устройство фундамента любой сложности", slug: "/services/foundation" },
   { icon: "Wrench", title: "Ремонт любой сложности", desc: "Полный спектр строительных и ремонтных работ для физических и юридических лиц", slug: "/services/repair" },
   { icon: "Shield", title: "Гарантия на работы", desc: "Даём гарантию на все работы, выполненные из нашего материала", slug: "/services/warranty" },
+  { icon: "Fence", title: "Заборы", desc: "Выполняем все виды заборов: глухие, сетчатые, кирпичные, деревянные и другие", slug: "/services/fences" },
 ];
 
 const WORKS = [

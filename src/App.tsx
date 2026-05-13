@@ -12,6 +12,7 @@ import Facade from "./pages/services/Facade";
 import Foundation from "./pages/services/Foundation";
 import Repair from "./pages/services/Repair";
 import Warranty from "./pages/services/Warranty";
+import Fences from "./pages/services/Fences";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/services/foundation" element={<Foundation />} />
           <Route path="/services/repair" element={<Repair />} />
           <Route path="/services/warranty" element={<Warranty />} />
+          <Route path="/services/fences" element={<Fences />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
