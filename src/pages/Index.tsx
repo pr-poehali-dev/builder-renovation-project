@@ -7,7 +7,7 @@ const HERO_IMG = "https://cdn.poehali.dev/projects/6409a538-d873-4bb0-ab67-be0ca
 const NAV_LINKS = [
   { label: "Главная", href: "#home" },
   { label: "О нас", href: "#about" },
-  { label: "Работы", href: "#works" },
+  { label: "Работы", href: "#services" },
   { label: "Контакты", href: "#contacts" },
 ];
 
@@ -294,7 +294,7 @@ export default function Index() {
       </section>
 
       {/* SERVICES */}
-      <section className="py-24 bg-[#111]">
+      <section id="services" className="py-24 bg-[#111]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <div className="text-yellow-400 font-display text-xs font-bold uppercase tracking-widest mb-4">Что мы делаем</div>
